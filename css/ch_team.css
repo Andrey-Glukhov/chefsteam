@@ -85,6 +85,22 @@ button {
     height: 100%;
 }
 
+.tickets_background {
+    background-image: url(../img/contact_form-08.png);
+    background-size: 100% auto;
+    background-repeat-y: repeat;
+}
+
+img.full-width {
+    width: 100%;
+    height: auto;
+}
+
+img.half-width {
+    width: 75%;
+    height: auto;
+}
+
 
 /*xs*/
 
