@@ -1,12 +1,12 @@
-<div class="container-fluid section_height">
-    <div class="row section_fulscreen">
+<div class="container-fluid section_height ">
+    <div class="row section_fulscreen contact_block">
         <div class="col-12">
             <h2>Официальное письмо для работодателя — почему он должен оплатить твое участие!</h2>
             <button>Скачай!</button>
         </div>
 
 
-        <div class="col-12">
+        <div class="col-10">
             <div id="accordion">
                 <div class="card">
                     <div class="card-header" id="headingOne">
@@ -123,7 +123,7 @@
     </div>
 
 
-    <div class="row section_fulscreen">
+    <div class="row section_fulscreen contact_form_wrapper">
         <div class="col-12">
             <?php echo do_shortcode('[contact-form-7 id="11" title="Contact form 1"]'); ?>
         </div>
