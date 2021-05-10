@@ -2,6 +2,7 @@
 function ch_team_script_enqueue(){
 //css
 	wp_enqueue_style( 'ch_team-stylesheet', get_template_directory_uri() . '/css/ch_team.css', array(), '1.0.0', 'all' );
+  wp_enqueue_style( 'slick-stylesheet', get_template_directory_uri() . '/css/slick.css', array(), '1.0.0', 'all' );
   //js
   // unregister jQuery
   wp_deregister_script('jquery-core');
@@ -21,9 +22,9 @@ function ch_team_script_enqueue(){
   // GSAP
   wp_enqueue_script( 'gsap-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.0/gsap.min.js', array('jquery'), null, true );
   wp_enqueue_script( 'gsap-animation-js', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js', array('jquery', 'gsap-js'), null, true );
-
-
-  wp_enqueue_script( 'ch_team-js', get_template_directory_uri() . '/js/ch_team.js', array('jquery', 'scroll-magic-js', 'gsap-js', 'bootstrap-js'), null, true );
+  // slick slider
+  wp_enqueue_script( 'slickslider-js', get_template_directory_uri() .'/js/slick.min.js', array('jquery'), null, true );
+  wp_enqueue_script( 'ch_team-js', get_template_directory_uri() . '/js/ch_team.js', array('jquery', 'scroll-magic-js', 'gsap-js', 'bootstrap-js', 'slickslider-js'), null, true );
 
 }
 add_action( 'wp_enqueue_scripts', 'ch_team_script_enqueue' );

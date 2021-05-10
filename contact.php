@@ -124,7 +124,13 @@
 
 
     <div class="row section_fulscreen contact_form_wrapper">
-        <div class="col-12">
+    <div class="contact_form_background"></div>
+        <div class="side_pic pic_left_1"></div>
+        <div class="side_pic pic_right_1"></div>
+        <div class="side_pic pic_left_2"></div>
+        <div class="side_pic pic_right_2"></div>
+        <div class="side_pic pic_center"></div>
+        <div class="col-12 contact_column">
             <?php echo do_shortcode('[contact-form-7 id="11" title="Contact form 1"]'); ?>
         </div>
     </div>
