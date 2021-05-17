@@ -6,35 +6,42 @@
 <?php// include (TEMPLATEPATH . '/tickets.php'); ?>
 <?php// include (TEMPLATEPATH . '/contact.php'); ?>
 
-<div class="container-fluid section_height">
-    <div class="water_melon_block"></div>
-    <div class="cap_left_block"></div>
-    <div class="knife_right_block"></div>
-    <div class="glass_left_block"></div>
-    <div class="bowl_left_block"></div>
-    <div class="orange_right_block"></div>
-    <div class="row">
+<div class="container-fluid section_height opener_background">
+    <div class="water_melon_block open_pic_left"></div>
+    <div class="cap_left_block open_pic_left"></div>
+    <div class="knife_right_block open_pic_right"></div>
+    <div class="glass_left_block open_pic_left"></div>
+    <div class="bowl_left_block open_pic_left"></div>
+    <div class="orange_right_block open_pic_right"></div>
+    <div class="spectacles_right_block open_pic_right"></div>
+    <div class="leaves_left_block open_pic_left"></div>
+    <div class="row opener_row">
         <div class="col-12">
             <div class="opener_header_wrapper">
                 <div class="header_block">
-                    <h1>Chefs Team </h1>
-                    <h2> Fest</h2>
-                    <p> Фестиваль для шеф-поваров без мастер-классов!</p>
+                    <h1 class="header_up">Chefs Team </h1>
+                    
+                        <h2 class="header_low"> Fest</h2>
+                        <div class="subheader"> Фестиваль для шеф-поваров без мастер-классов!</div>
+                       
                 </div>
                 <div class="button_wrapper">
-                    <button>Принять участие</button>
-                    <button>Программа</button>
+                    <button class="button_part">Принять участие</button>
+                    <button class="button_programm">Программа</button>
                 </div>
+                <div class="date_wrapper">
+                    <h2>21-25 июля 2021</h2>
+                </div>    
             </div>
         </div>
 
-        <div class="col-12">
+        <!-- <div class="col-12">
             <h2>21-25 июля 2021</h2>
             <p>Такого еще не было!</p>
-        </div>
+        </div> -->
 
     </div>
-    <div class="row section_fulscreen">
+    <div class="row section_fulscreen slider_wrapper">
         <div class="col-12">
             <h2>Что нужно уметь шефу, чтобы быть в тренде?</h2>
             <div class="multiple-items">
@@ -73,22 +80,26 @@
             <p>Такого гастрономическая Россия еще не видела!</p>
         </div>
     </div>
-</div><div class="container-fluid section_height">
+</div><div class="container-fluid section_height tv_background">
     <div class="row section_fulscreen">
+        <!-- <div class="lamp_pic"></div> -->
         <div class="col-12 video_invites">
             <img src="./wp-content/themes/chefsteam/img/ChefEvent_tv-07.png"/>
 
         </div>
+        <!-- <div class="cherry_bowl_pic"></div> -->
     </div>
 
     <div class="row section_fulscreen">
         <div class="col-12 video_invites">
-           <h2>Итог для шефа после форума:</h2>
-           <p>-обновленные страницы в соцсетях</p>
-        <p>-навыки фоторедакции и видеомонтажа</p>
-        <p>-навыки публичных выступлений</p>
-        <p>-раскрытие творческого потенциала</p>
-        <h3>И самое главное — навык проведения мега-ужинов, от которых в восторге будет каждый гость!</h3>
+            <h2>Итог для шефа после форума:</h2>
+            <ul>
+                <li>обновленные страницы в соцсетях</li>
+                <li>навыки фоторедакции и видеомонтажа</li>
+                <li>навыки публичных выступлений</li>
+                <li>раскрытие творческого потенциала</li>
+            </ul>
+            <h3>И самое главное — навык проведения мега-ужинов, от которых в восторге будет каждый гость!</h3>
         </div>
     </div>
 
@@ -100,7 +111,7 @@
             <img class="full-width"
                 src="./wp-content/themes/chefsteam/img/contact_form-13-min.png" />
         </div>
-        <div class="col-md-4 col-sm-12 card ticket_card">
+        <div class="col-md-4 offset-md-0 col-sm-8 offset-sm-2 card ticket_card">
             <img class="half-width card-img-top"
                 src="./wp-content/themes/chefsteam/img/contact_form-12-min.png" />
             <div class="ticket_body card-body">
@@ -118,9 +129,10 @@
                         <li>Пункт 4</li>
                     </ul>
                 </div>
+                <div class="ticket_bottom_pic"></div>
             </div>
         </div>
-        <div class="col-md-4 col-sm-12 card ticket_card">
+        <div class="col-md-4 offset-md-0 col-sm-8 offset-sm-2 card ticket_card">
             <img class="half-width card-img-top"
                 src="./wp-content/themes/chefsteam/img/contact_form-11-min.png" />
             <div class="ticket_body card-body">
@@ -140,7 +152,7 @@
                 </div>
             </div>            
         </div>
-        <div class="col-md-4 col-sm-12 card ticket_card">
+        <div class="col-md-4 offset-md-0 col-sm-8 offset-sm-2 card ticket_card">
             <img class="half-width card-img-top"
                 src="./wp-content/themes/chefsteam/img/contact_form-10-min.png" />
             <div class="ticket_body card-body">
@@ -181,13 +193,13 @@
 
 
         <div class="col-10">
-            <div id="accordion">
+            <div id="accordion" role="tablist">
                 <div class="card">
                     <div class="card-header question_header" id="headingOne">
                         <h5 class="mb-0">
                             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne"
                                 aria-expanded="true" aria-controls="collapseOne">
-                                Вопрос 1
+                                Вопрос 1<i class="fa fa-plus more_less" ></i>
                             </button>
                         </h5>
                     </div>
@@ -210,7 +222,7 @@
                         <h5 class="mb-0">
                             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
                                 aria-expanded="false" aria-controls="collapseTwo">
-                                Вопрос 2
+                                Вопрос 2<i class="fa fa-plus more_less"></i>
                             </button>
                         </h5>
                     </div>
@@ -232,7 +244,7 @@
                         <h5 class="mb-0">
                             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
                                 aria-expanded="false" aria-controls="collapseThree">
-                                Вопрос 3
+                                Вопрос 3<i class="fa fa-plus more_less"></i>
                             </button>
                         </h5>
                     </div>
@@ -253,7 +265,7 @@
                         <h5 class="mb-0">
                             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
                                 aria-expanded="true" aria-controls="collapseFour">
-                                Вопрос 4
+                                Вопрос 4<i class="fa fa-plus more_less"></i>
                             </button>
                         </h5>
                     </div>
@@ -275,7 +287,7 @@
                         <h5 class="mb-0">
                             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
                                 aria-expanded="true" aria-controls="collapseFive">
-                                Вопрос 5
+                                Вопрос 5<i class="fa fa-plus more_less"></i>
                             </button>
                         </h5>
                     </div>
@@ -305,34 +317,11 @@
         <div class="side_pic pic_right_2"></div>
         <div class="side_pic pic_center"></div>
         <div class="col-12 contact_column">
-            <div role="form" class="wpcf7" id="wpcf7-f11-o1" lang="en-US" dir="ltr">
-<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
-<form action="/chefsteam/wordpress/#wpcf7-f11-o1" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
-<div style="display: none;">
-<input type="hidden" name="_wpcf7" value="11" />
-<input type="hidden" name="_wpcf7_version" value="5.4" />
-<input type="hidden" name="_wpcf7_locale" value="en_US" />
-<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f11-o1" />
-<input type="hidden" name="_wpcf7_container_post" value="0" />
-<input type="hidden" name="_wpcf7_posted_data_hash" value="" />
-</div>
-<p><label> Your name<br />
-    <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span> </label></p>
-<p><label> Your email<br />
-    <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" /></span> </label></p>
-<p><label> Subject<br />
-    <span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span> </label></p>
-<p><label> Your message (optional)<br />
-    <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span> </label></p>
-<p><input type="submit" value="Submit" class="wpcf7-form-control wpcf7-submit" /></p>
-<div class="wpcf7-response-output" aria-hidden="true"></div></form></div>        </div>
+            <?php echo do_shortcode('[contact-form-7 id="11" title="Contact form 1"]'); ?>       
+        </div>
     </div>
 
 </div>
-</main>
 
-<!--End mc_embed_signup-->
-
-</div>
 
 <?php get_footer(); ?>
