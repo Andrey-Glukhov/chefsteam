@@ -34,4 +34,16 @@ function ch_team_theme_setup(){
   register_nav_menu('primary', 'Primary Header Navigation');
 }
 
+function filter_wpcf7_response_output( $output, $class, $content, $out_obj, $status ){
+  // Replace Success CSS Class
+  //$output = str_replace( ' wpcf7-mail-sent-ok', ' alert alert-success', $output );
+  error_log('cf7--out--->' . print_r($output, true));
+  error_log('cf7--cl--->' . print_r($class, true));
+  error_log('cf7--co--->' . print_r($content, true));
+  error_log('cf7--obj--->' . print_r($out_obj, true));
+  error_log('cf7--st--->' . print_r($status, true));
+  return $output; 
+}
+add_filter( 'wpcf7_form_response_output', 'filter_wpcf7_response_output', 10, 5 );
+
 ?>
